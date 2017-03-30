@@ -16,6 +16,11 @@ if newInput>18:
     print '成年'
 else:
     print '未成年'
-
-print newInput
-print newInput
+def my_abs(x):
+    if not isinstance(x,(int,float)):
+        raise TypeError('input int,float')
+    if x > 0:
+        return x
+    else:
+        return -x
+print my_abs(input('请输入数字:'))
